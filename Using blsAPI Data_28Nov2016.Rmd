@@ -62,8 +62,8 @@ i <- 0
 
 
 The following will complete the for-loop.  
-"d" is a stand-in variable in loops. It represents each variable the code will loop through. 
-The curly brackets are used to denote a block of code in a function.
+"d" is a stand-in variable in loops. It represents each variable the code will loop through.  
+The curly brackets are used to denote a block of code in a function.  
 i <- i+1 represents row positioning. *Note: i+3 would format the data to list every third row of the data frame.*  
 The function "unlist" will unlist a list of vectors into a single vector.  
 [i,] represents i as the rows and the columns open for each variable the code will loop through. The square brackets are used to subset vectors and data frames.
