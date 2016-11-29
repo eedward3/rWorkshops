@@ -9,7 +9,7 @@ This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. The purpose is t
 
 This step installs the two CRAN Packages "blsAPI" and "rjson".  
 "blsAPI" pulls API data directly from the Bureau of Labor Statistics.  
-"rjson" is needed as "blsAPI" is written in json and needs to be understood in R
+"rjson" is needed as "blsAPI" presents data in json and needs to be understood in R
 
 ```{r}
 install.packages('blsAPI')
@@ -62,10 +62,11 @@ i <- 0
 
 
 The following will complete the for-loop.  
-"d" is a stand-in variable in loops. It represents each variable the code will loop through.  
+"d" is a stand-in variable in loops. It represents each variable the code will loop through. 
+The curly brackets are used to denote a block of code in a function.
 i <- i+1 represents row positioning. *Note: i+3 would format the data to list every third row of the data frame.*  
 The function "unlist" will unlist a list of vectors into a single vector.  
-[i,] represents i as the rows and the columns open for each variable the code will loop through.
+[i,] represents i as the rows and the columns open for each variable the code will loop through. The square brackets are used to subset vectors and data frames.
 
 ```{r}
 for(d in json$Results$series[[1]]$data){
